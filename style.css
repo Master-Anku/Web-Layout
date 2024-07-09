@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #48c3d0;
+    --header-footer-bg-color: rgb(102, 87, 59);
+    --header-footer-color: whitesmoke;
+    --primary-hover: rgb(110, 109, 107);
+    --button-bg-color: rgb(85, 82, 76);
+    --button-bg-hover: rgb(110, 109, 107);
+    --border-left: lightskyblue;
+    --highlighted-color: #4caf50;
+  
+    --card-border-radius: 6px;
+    --accent-red: #bc2e14;
+  }
+  
+* {
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Universal Selector Ends */
+
+/* Theme styles */
+.nav-item a,
+footer a,
+.btn {
+  color: var(--header-footer-color);
+  text-decoration: none;
+}
+
+.nav-item a:hover,
+footer a:hover,
+.btn:hover {
+  background-color: var(--primary-hover);
+  color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: var(--tertiary-color);
+  color: var(--header-footer-color);
+  border: none;
+  padding: 9px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+  color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+/* Header styles */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  background-color: var(--header-footer-bg-color);
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo {
+  margin-right: auto;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-item a {
+  padding: 7px 12px;
+  font-size: 1.3rem;
+}
+/* nav header end  */
